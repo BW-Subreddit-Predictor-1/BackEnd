@@ -13,8 +13,8 @@ module.exports = {
   }
 
   function findById(id) {
-      return db('post')
-      .where({id})
+      return db('posts')
+      .where({id}) //pulling from params
       .first();
 }
 
