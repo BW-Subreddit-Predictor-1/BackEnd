@@ -41,8 +41,39 @@ router.post('/',(req, res) => {
 })
 
 
-router.put('/:id',(req, res) => {})
+router.put('/:id',(req, res) => {
+    const { title, contents } = req.body
+	const id = req.params.id
+        
+    !title || !contents
+    ? res.status(400).json({ errorMessage: 'No Title and No Contents for this Post' })
+	    : Post.update(id, req.body)
+				.then(post => {
+                    post ? res.status(200).json(req.body) 
+                        :res.status(404).json({ message: 'The post with the specified ID does not exist.' })
+				})
+				.catch(err => {
+					res.status(500).json({
+						message: 'The post information could not be modified.',
+					})
+				})
+})
 
-router.delete('/:id',(req, res) => {})
+router.delete('/:id',(req, res) => {
+    const id = req.params.id
+    
+	Post.findById(id)
+		.then(post => {
+			post
+                ? Post.remove(id)
+                      .then(post => {
+							res.status(200).json({ message: 'Post was deleted'}) 
+				  })
+				: res.status(404).json({ message: `The Post with specified ${id} Does NOT Exist` })
+		})
+		.catch(err => {
+			res.status(500).json({ message: 'The Post Could Not Be Removed' })
+		})
+})
 
 module.exports = router
