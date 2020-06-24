@@ -3,6 +3,13 @@
 
 Base URL (https://www.google.com) coming soon!!
 
+# Database Schema
+
+```
+   I love you
+```
+
+
 1. Creation/ Login Flow
 
 | # Endpoints        | # Method  | # Other                 |
