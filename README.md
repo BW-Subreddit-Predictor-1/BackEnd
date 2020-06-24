@@ -14,7 +14,7 @@ Method Url: ```/api/auth/register``` HTTP Method: POST
 
 1. Creation/ regiter Flow
 
-| # Endpoints        | # Method  | # Other                 |
+| #Endpoints         | #Method   | #Other                 |
 | -------------------|:---------:| -----------------------:|
 | /api/auth/register |   POST    | Register                |
 
