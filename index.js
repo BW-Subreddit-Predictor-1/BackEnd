@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const app = require('./api/server.js'); // import the express package
 
 const PORT = process.env.PORT || 5050;
