@@ -5,7 +5,15 @@ Base URL (https://www.google.com) coming soon!!
 
 1. Creation/ Login Flow
 
-| # Endpoints       | # Method  | # Other                 |
-| ------------------|:---------:| -----------------------:|
-| api/auth/register |  POST     | Register                |
-| api/auth/login    |  POST     | Login a User with Token |
+| # Endpoints        | # Method  | # Other                 |
+| -------------------|:---------:| -----------------------:|
+| /api/auth/register |   POST    | Register                |
+| /api/auth/login    |   POST    | Login a User with Token |
+
+
+2.  User Routes
+
+| # Endpoints | # Method | # Other               |
+| ------------|:--------:| ---------------------:|
+| /api/user   |   GET    | Gets a List of Users  |
+
