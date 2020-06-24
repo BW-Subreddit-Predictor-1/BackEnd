@@ -6,7 +6,17 @@ Base URL (https://www.google.com) coming soon!!
 # Database Schema
 
 ```
-   I love you
+Users
+
+`````
+
+```
+{
+    "FirstName" : "FirstName":,
+    "LastName" : "LastName",
+    "Email" : "Email",
+    "password" : "password"
+ }
 ```
 
 
