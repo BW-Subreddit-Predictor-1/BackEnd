@@ -1,7 +1,7 @@
 # BackEnd
 # API documentation
 
-Base URL (https://www.google.com) coming soon!!
+Base URL (https://subreddit-post.herokuapp.com/) 
 
 
 # Auth Routes
